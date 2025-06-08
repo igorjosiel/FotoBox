@@ -12,6 +12,13 @@
   --color-card-text: #555;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -52,6 +59,7 @@ nav a.active {
 
 main {
   padding: 2rem;
+  flex: 1;
 }
 
 h1 {
@@ -93,10 +101,10 @@ h1 {
   color: #555;
 }
 
-/*footer {
-  background-color: #222;
-  color: white;
+footer {
+  background-color: var(--color-header-bg);
+  color: var(--color-card-bg);
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-} */
+}
