@@ -28,10 +28,26 @@ header {
   align-items: center;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
 nav a {
-  color: var(----color-header-text);
+  color: var(--color-header-text);
   margin-left: 1rem;
   text-decoration: none;
+}
+
+nav a.active {
+  background-color: var(--color-header-text);
+  color: var(--color-header-bg);
+  padding: 7px;
+  border-radius: 3px;
+  font-weight: 600;
 }
 
 /* main {
